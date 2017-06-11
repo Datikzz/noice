@@ -30,6 +30,7 @@ export class UserpostDetailComponent implements OnInit{
   ngOnInit(): void {
   this.route.params
       .switchMap((params: Params) => this.userpostService.getPost(+params['id']))
+      //i guess here is the problem, params do not fetch correctly, or at all
       .subscribe(userpost => this.userpost = userpost);
   }
 

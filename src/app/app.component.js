@@ -34,7 +34,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <router-outlet></router-outlet>\n  <table class=\"userposts\">\n    <thead>\n      <tr>\n        <th>Title</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let userpost of userposts\"\n      (click)=\"onSelect(userpost)\"\n      [class.selected]=\"userpost === selectedUserpost\">\n      <td><a>{{userpost.title}}</a></td>\n      </tr>\n    </tbody>\n  </table>\n  ",
+        template: "\n  <router-outlet></router-outlet>\n  <!--it supposed to render new component here\n      actually, it renders it with 0px and does change URL id,\n      but no info\n  -->\n  <table class=\"userposts\">\n    <thead>\n      <tr>\n        <th>Title</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let userpost of userposts\"\n      (click)=\"onSelect(userpost)\"\n      [class.selected]=\"userpost === selectedUserpost\">\n      <td><a>{{userpost.title}}</a></td>\n      </tr>\n    </tbody>\n  </table>\n  ",
         providers: [userpost_service_1.UserpostService]
     }),
     __metadata("design:paramtypes", [router_1.Router,

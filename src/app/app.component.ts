@@ -9,6 +9,10 @@ import { UserpostService } from './userpost.service';
   selector: 'my-app',
   template: `
   <router-outlet></router-outlet>
+  <!--it supposed to render new component here
+      actually, it renders it with 0px and does change URL id,
+      but no info
+  -->
   <table class="userposts">
     <thead>
       <tr>
