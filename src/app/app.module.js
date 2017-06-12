@@ -10,6 +10,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var http_1 = require("@angular/http");
 var userpost_detail_component_1 = require("./userpost-detail.component");
+var userposts_component_1 = require("./userposts.component");
 var userpost_service_1 = require("./userpost.service");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
@@ -26,7 +27,8 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            userpost_detail_component_1.UserpostDetailComponent
+            userpost_detail_component_1.UserpostDetailComponent,
+            userposts_component_1.UserpostsComponent
         ],
         providers: [userpost_service_1.UserpostService],
         bootstrap: [app_component_1.AppComponent]

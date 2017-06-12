@@ -4,6 +4,7 @@ import { AppComponent }  from './app.component'
 import { HttpModule }    from '@angular/http';
 
 import { UserpostDetailComponent }  from './userpost-detail.component';
+import {UserpostsComponent } from './userposts.component';
 import { UserpostService }          from './userpost.service';
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -15,7 +16,8 @@ import { AppRoutingModule }     from './app-routing.module';
  ],
  declarations: [
    AppComponent,
-   UserpostDetailComponent
+   UserpostDetailComponent,
+   UserpostsComponent
  ],
  providers: [ UserpostService ],
  bootstrap: [ AppComponent ]

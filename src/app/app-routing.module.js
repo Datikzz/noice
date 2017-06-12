@@ -8,7 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var userpost_detail_component_1 = require("./userpost-detail.component");
+var userposts_component_1 = require("./userposts.component");
 var routes = [
+    { path: '', redirectTo: '/userposts', pathMatch: 'full' },
+    { path: 'userposts', component: userposts_component_1.UserpostsComponent },
     { path: 'detail/:id', component: userpost_detail_component_1.UserpostDetailComponent }
 ];
 var AppRoutingModule = (function () {
