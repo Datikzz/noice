@@ -33,7 +33,7 @@ var UserpostsComponent = (function () {
 UserpostsComponent = __decorate([
     core_1.Component({
         selector: 'userposts',
-        template: "\n  <table class=\"userposts\">\n    <thead>\n      <tr>\n        <th>Title</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let userpost of userposts\"\n      (click)=\"onSelect(userpost)\"\n      [class.selected]=\"userpost === selectedUserpost\">\n      <td><a>{{userpost.title}}</a></td>\n      </tr>\n    </tbody>\n  </table>\n  ",
+        template: "\n  <table class=\"userposts table-hover\">\n    <thead>\n      <tr>\n        <th>Title</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let userpost of userposts\"\n      (click)=\"onSelect(userpost)\"\n      [class.selected]=\"userpost === selectedUserpost\">\n      <td><a>{{userpost.title}}</a></td>\n      </tr>\n    </tbody>\n  </table>\n  ",
         providers: [userpost_service_1.UserpostService]
     }),
     __metadata("design:paramtypes", [router_1.Router,

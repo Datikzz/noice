@@ -8,7 +8,7 @@ import { UserpostService } from './userpost.service';
 @Component({
   selector: 'userposts',
   template: `
-  <table class="userposts">
+  <table class="userposts table-hover">
     <thead>
       <tr>
         <th>Title</th>

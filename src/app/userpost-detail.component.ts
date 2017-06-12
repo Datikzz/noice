@@ -11,10 +11,10 @@ import { UserpostService }  from './userpost.service';
   template: `
   <div *ngIf="userpost">
     <h2>{{userpost.title}} details!</h2>
-    <div><label>userId: </label>{{userpost.userId}}</div>
-    <div><label>id: </label>{{userpost.id}}</div>
-    <div><label>title: </label>{{userpost.title}}</div>
-    <div><label>body: </label>{{userpost.body}}</div>
+    <div><label>User's id: </label>{{userpost.userId}}</div>
+    <div><label>Id of post: </label>{{userpost.id}}</div>
+    <div><label>Title: </label>{{userpost.title}}</div>
+    <div><label>Body: </label>{{userpost.body}}</div>
     <button (click)="goBack()">Back</button>
   </div>
   `

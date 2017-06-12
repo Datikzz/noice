@@ -42,7 +42,7 @@ var UserpostDetailComponent = (function () {
 UserpostDetailComponent = __decorate([
     core_1.Component({
         selector: 'userpost-detail',
-        template: "\n  <div *ngIf=\"userpost\">\n    <h2>{{userpost.title}} details!</h2>\n    <div><label>userId: </label>{{userpost.userId}}</div>\n    <div><label>id: </label>{{userpost.id}}</div>\n    <div><label>title: </label>{{userpost.title}}</div>\n    <div><label>body: </label>{{userpost.body}}</div>\n    <button (click)=\"goBack()\">Back</button>\n  </div>\n  "
+        template: "\n  <div *ngIf=\"userpost\">\n    <h2>{{userpost.title}} details!</h2>\n    <div><label>User's id: </label>{{userpost.userId}}</div>\n    <div><label>Id of post: </label>{{userpost.id}}</div>\n    <div><label>Title: </label>{{userpost.title}}</div>\n    <div><label>Body: </label>{{userpost.body}}</div>\n    <button (click)=\"goBack()\">Back</button>\n  </div>\n  "
     }),
     __metadata("design:paramtypes", [userpost_service_1.UserpostService,
         router_1.ActivatedRoute,
