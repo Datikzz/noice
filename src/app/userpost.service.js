@@ -34,7 +34,7 @@ var UserpostService = (function () {
         var url = this.userpostsUrl + "/" + id;
         return this.http.get(url)
             .toPromise()
-            .then(function (response) { return response.json().data; })
+            .then(function (response) { return response.json(); })
             .catch(this.handleError);
     };
     /*getPosts(): Promise<Userpost[]> {

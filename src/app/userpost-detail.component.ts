@@ -28,10 +28,18 @@ export class UserpostDetailComponent implements OnInit{
     private location: Location
   ) {}
   ngOnInit(): void {
-  this.route.params
-      .switchMap((params: Params) => this.userpostService.getPost(+params['id']))
-      //i guess here is the problem, params do not fetch correctly, or at all
-      .subscribe(userpost => this.userpost = userpost);
+    console.log('init userpost detail');
+    this.route.params
+      .switchMap((params: any) => {
+        return this.userpostService.getPost(+params['id']);
+      })
+      .subscribe(userpost => {
+        console.log('subscribe', userpost);
+        if (userpost) {
+          this.userpost = userpost;
+          console.log('assign userpost', this);
+        }
+      });
   }
 
   goBack(): void {

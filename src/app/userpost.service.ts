@@ -31,7 +31,7 @@ export class UserpostService {
       const url = `${this.userpostsUrl}/${id}`;
       return this.http.get(url)
       .toPromise()
-      .then(response => response.json().data as Userpost)
+      .then(response => response.json() as Userpost)
       .catch(this.handleError);
     }
     /*getPosts(): Promise<Userpost[]> {

@@ -21,9 +21,18 @@ var UserpostDetailComponent = (function () {
     }
     UserpostDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
+        console.log('init userpost detail');
         this.route.params
-            .switchMap(function (params) { return _this.userpostService.getPost(+params['id']); })
-            .subscribe(function (userpost) { return _this.userpost = userpost; });
+            .switchMap(function (params) {
+            return _this.userpostService.getPost(+params['id']);
+        })
+            .subscribe(function (userpost) {
+            console.log('subscribe', userpost);
+            if (userpost) {
+                _this.userpost = userpost;
+                console.log('assign userpost', _this);
+            }
+        });
     };
     UserpostDetailComponent.prototype.goBack = function () {
         this.location.back();
